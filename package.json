@@ -7,7 +7,8 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "deploy-github": "ng build --prod --aot && node copy-to-docs.js && git add . && git commit -m 'build' && git push origin master"
   },
   "private": true,
   "dependencies": {
