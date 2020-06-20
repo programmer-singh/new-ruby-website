@@ -1,0 +1,44 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~ngx-owl-carousel-o/lib/styles/scss/owl.carousel";
+@import "~ngx-owl-carousel-o/lib/styles/scss/owl.theme.default";
+html,
+body {
+    height: 100%;
+}
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    .owl-carousel {
+        &.owl-theme {
+            position: relative;
+            .owl-nav {
+                margin: 0;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                div {
+                    background-color: transparent;
+                    i {
+                        font-size: 2em;
+                    }
+                    &:hover {
+                        background-color: transparent;
+                    }
+                }
+            }
+            .owl-dots {
+                .owl-dot {
+                    &.active {
+                        span {
+                            background-color: #283593;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}

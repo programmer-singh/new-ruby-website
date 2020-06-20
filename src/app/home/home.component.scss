@@ -1,0 +1,33 @@
+@import '../variables.scss';
+.slide-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    img {
+        width: 100%
+    }
+}
+@media (min-width: $bp-pot-tab) {
+    .slide-content {
+        height: 350px;
+    }
+}
+
+@media (min-width: $bp-land-tab) {
+    .slide-content {
+        height: 450px;
+    }
+}
+
+@media (min-width: $bp-lap-desk) {
+    .slide-content {
+        height: 550px;
+    }
+}
+
+@media (min-width: $bp-large-screens) {
+    .slide-content {
+        height: 600px;
+    }
+}
