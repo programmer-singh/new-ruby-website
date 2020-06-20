@@ -1,6 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~ngx-owl-carousel-o/lib/styles/scss/owl.carousel";
 @import "~ngx-owl-carousel-o/lib/styles/scss/owl.theme.default";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 html,
 body {
     height: 100%;
@@ -8,6 +9,7 @@ body {
 body {
     margin: 0;
     font-family: Roboto, "Helvetica Neue", sans-serif;
+    overflow-x: hidden;
     .owl-carousel {
         &.owl-theme {
             position: relative;
@@ -25,11 +27,15 @@ body {
                         font-size: 2em;
                     }
                     &:hover {
+                        color: #283593;
                         background-color: transparent;
                     }
                 }
             }
             .owl-dots {
+                position: absolute;
+                bottom: 10px;
+                width: 100vw;
                 .owl-dot {
                     &.active {
                         span {

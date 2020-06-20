@@ -1,0 +1,127 @@
+@import "../variables.scss";
+.header-row {
+    box-sizing: border-box;
+    width: 100%;
+    height: 110px;
+    background-color: #eaeaee;
+    display: flex;
+    align-items: center;
+    color: #303f9f;
+    padding: 0 15px;
+    .header-col {
+        display: flex;
+        align-items: center;
+        &.header-col-left {
+            width: 33.333%;
+            .logo-container {
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                .text {
+                    text-align: center;
+                }
+            }
+        }
+        &.header-col-right {
+            width: 66.666%;
+            align-items: flex-end;
+            flex-direction: column;
+            .contact-container {
+                div {
+                    display: flex;
+                    align-items: center;
+                    padding: 2px 0;
+                    font-size: 1.3vw;
+                    i {
+                        &.material-icons {
+                            font-size: 2vw;
+                        }
+                    }
+                    span {
+                        padding-left: 5px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $bp-phone) {
+    // .header-row {
+    //     .header-col-right {
+    //         .contact-container {
+    //             display: none;
+    //         }
+    //         .hamburger {
+    //             display: block;
+    //         }
+    //     }
+    // }
+}
+
+@media (max-width: $bp-land-tab) {
+    .header-row {
+        height: 70px;
+        .header-col-left {
+            .logo-container {
+                .image {
+                    height: 60px;
+                }
+                .text {
+                    font-size: 3vw;
+                    font-weight: 500;
+                }
+            }
+        }
+        .header-col-right {
+            .contact-container {
+                display: none;
+            }
+            .hamburger {
+                display: block;
+            }
+        }
+    }
+}
+
+@media (min-width: $bp-land-tab) {
+    .header-row {
+        height: 110px;
+        .header-col-left {
+            .logo-container {
+                .image {
+                    height: 100px;
+                }
+                .text {
+                    font-size: 2.6vw;
+                    font-weight: 500;
+                }
+            }
+        }
+        .header-col-right {
+            .contact-container {
+                display: block;
+                div {
+                    font-weight: 500;
+                }
+            }
+            .hamburger {
+                display: none;
+            }
+        }
+    }
+}
+
+@media (min-width: $bp-lap-desk) {
+    // .header-col-right {
+    //     .contact-container {
+    //         div {
+    //             font-weight: 400;
+    //         }
+    //     }
+    // }
+}
+
+@media (min-width: $bp-large-screens) {
+}
+

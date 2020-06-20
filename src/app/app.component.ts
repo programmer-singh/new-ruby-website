@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild, ElementRef } from '@angular/core';
+
 
 @Component({
   selector: 'app-root',
@@ -6,7 +7,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  opened = false;
+  opened = true;
   events: string[] = [];
   title = 'new-ruby-website';
+
+  @ViewChild('drawer') drawer: ElementRef;
+
+  onToggleDrawer(event) {
+    console.log(event);
+    this.opened = !this.opened;
+  }
 }
