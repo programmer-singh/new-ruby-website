@@ -7,7 +7,7 @@ import { Component, ViewChild, ElementRef } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  opened = true;
+  opened = false;
   events: string[] = [];
   title = 'new-ruby-website';
 
