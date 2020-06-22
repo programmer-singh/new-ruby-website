@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule} from '@angular/core';
+import { LocationStrategy, PathLocationStrategy } from '@angular/common';
 
 import {MatSidenavModule} from '@angular/material/sidenav';
 
@@ -9,6 +10,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 import { HeaderModule } from './header/header.module';
+
 
 @NgModule({
   declarations: [
@@ -22,7 +24,7 @@ import { HeaderModule } from './header/header.module';
     MatSidenavModule,
     HeaderModule,
   ],
-  providers: [],
+  providers: [{provide: LocationStrategy, useClass: PathLocationStrategy}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
