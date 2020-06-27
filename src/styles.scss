@@ -3,15 +3,17 @@
 @import "~ngx-owl-carousel-o/lib/styles/scss/owl.carousel";
 @import "~ngx-owl-carousel-o/lib/styles/scss/owl.theme.default";
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import "~animate.css/animate.min";
 html,
 body {
     height: 100%;
 }
 body {
     margin: 0;
+    overflow: auto;
     font-family: Roboto, "Helvetica Neue", sans-serif;
-    overflow-x: hidden;
     .owl-carousel {
+        width: 100%;
         &.owl-theme {
             position: relative;
             .owl-nav {
@@ -36,7 +38,7 @@ body {
             .owl-dots {
                 position: absolute;
                 bottom: 10px;
-                width: 100vw;
+                width: 100%;
                 .owl-dot {
                     &.active {
                         span {

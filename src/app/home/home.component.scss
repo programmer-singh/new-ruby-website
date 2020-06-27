@@ -1,69 +1,170 @@
 @import "../variables.scss";
-.animate__animated {
-    visibility: visible !important;
-}
-.hide-on-init {
-    visibility: hidden;
-}
-.slide-content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 200px;
-    img {
-        width: 100%;
+// .animate__animated {
+//     visibility: visible !important;
+// }
+// .hide-on-init {
+//     visibility: hidden;
+// }
+.intro {
+    .intro-content {
+        background-image: linear-gradient(90deg, #ff525212, transparent);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: calc(100vh - 70px);
+        .text {
+            // width: 50%;
+            text-align: center;
+            .heading {
+                margin: 0;
+                font-size: 80px;
+                font-weight: 500;
+                color: #3f51b5;
+                .secondary-text {
+                    color: #ff5252;
+                    .heart {
+                        display: inline-block;
+                        font-size: 55px;
+                    }
+                }
+            }
+            .mission {
+                .mission-head {
+                    color: #303f9f;
+                    font-size: 38px;
+                    margin-top: 0;
+                    span {
+                        color: #ff5252;
+                    }
+                }
+                .mission-text {
+                    font-size: 22px;
+                    font-family: 'Open Sans', sans-serif;
+                }
+            }
+        }
+        .logo {
+            // display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+            .image {
+                width: 80%;
+            }
+        }
     }
 }
 
 .divider {
     padding: 40px 20%;
+    &.divider-sm {
+        padding: 5px 20%;
+    }
     hr {
-        background-color: #BDBDBD;
+        background-color: #bdbdbd;
     }
 }
 
-.mission {
+.about {
     padding: 0 40px;
     background-color: eaeaee;
     text-align: center;
-    .mission-head {
-        color: #303F9F;
+    .about-head {
+        color: #303f9f;
         font-size: 38px;
         margin-top: 0;
         span {
-            color: #FF5252;
+            color: #ff5252;
         }
     }
     q {
-        font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
-        font-size: 26px;
+        font-family: "Open Sans", sans-serif;
+        // font-size: 26px;
     }
-    .mission-content {
-        text-align: justify ;
+    .about-content {
+        text-align: justify;
         color: #757575;
     }
 }
 
-@media (min-width: $bp-pot-tab) {
-    .slide-content {
-        height: 350px;
+@media (max-width: $bp-pot-tab) {
+    .intro-content {
+        padding: 0 40px;
+        .text {
+            width: 100%;
+            .heading {
+                font-size: 50px !important;
+                .heart {
+                    font-size: 36px !important;
+                }
+            }
+        }
+        .mission {
+            .mission-head {
+                font-size: 36px !important;
+                font-weight: 500 !important;
+            }
+            .mission-text {
+                font-size: 20px !important;
+            }
+        }
+        .logo {
+            display: none;
+        }
     }
 }
 
-@media (min-width: $bp-land-tab) {
-    .slide-content {
-        height: 450px;
+@media (max-width: $bp-land-tab) {
+    .intro-content {
+        padding: 0 40px;
+        .text {
+            width: 100%;
+        }
+        .logo {
+            display: none;
+        }
+    }
+}
+
+@media (min-width: $gt-bp-land-tab) {
+    .intro-content {
+        .text {
+            width: 50%;
+        }
+        .logo {
+            display: flex;
+        }
     }
 }
 
 @media (min-width: $bp-lap-desk) {
-    .slide-content {
-        height: 550px;
-    }
 }
 
 @media (min-width: $bp-large-screens) {
-    .slide-content {
-        height: 600px;
-    }
 }
+
+// .owlc {
+//     width: 50%;
+//     .slide-content {
+//         display: flex;
+//         align-items: center;
+//         justify-content: center;
+//         height: 200px;
+//         img {
+//             width: 100%;
+//         }
+//     }
+// }
+
+// .slide-content {
+//     height: 350px;
+// }
+// .slide-content {
+//     height: 450px;
+// }
+// .slide-content {
+//     height: 550px;
+// }
+// .slide-content {
+//     height: 600px;
+// }

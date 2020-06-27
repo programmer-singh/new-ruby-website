@@ -1,10 +1,11 @@
+import { slideInRight } from './animations';
 import { Component, ViewChild, ElementRef } from '@angular/core';
-import * as AOS from 'aos';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
+  animations: [slideInRight]
 })
 export class AppComponent {
   opened = false;
@@ -14,7 +15,6 @@ export class AppComponent {
   @ViewChild('drawer') drawer: ElementRef;
 
   onToggleDrawer(event) {
-    console.log(event);
     this.opened = !this.opened;
   }
 }
