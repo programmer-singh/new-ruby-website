@@ -1,6 +1,18 @@
 <mat-drawer-container class="drawer-container" [hasBackdrop]="true">
     <mat-drawer class="drawer-content" #drawer mode="push" [(opened)]="opened">
-        Something
+        <nav class="nav-drawer">
+            <ul>
+                <li class="nav-item active"><a>Home</a></li>
+                <li class="nav-item"><a>About us</a></li>
+                <li class="nav-item"><a>Departments</a></li>
+                <li class="nav-item"><a>Specialisation</a></li>
+                <li class="nav-item"><a>Empanelments</a></li>
+                <li class="nav-item"><a>Facilities</a></li>
+                <li class="nav-item"><a>Media</a></li>
+                <li class="nav-item"><a>Find doctor</a></li>
+                <li class="nav-item"><a>Contact us</a></li>
+            </ul>
+        </nav>
     </mat-drawer>
     <mat-drawer-content>
         <app-header (toggleDrawer)="onToggleDrawer($event)"></app-header>

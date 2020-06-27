@@ -1,5 +1,5 @@
 import { Component, ViewChild, ElementRef } from '@angular/core';
-
+import * as AOS from 'aos';
 
 @Component({
   selector: 'app-root',

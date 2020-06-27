@@ -1,8 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule} from '@angular/core';
+import { NgModule } from '@angular/core';
 import { LocationStrategy, HashLocationStrategy } from '@angular/common';
 
-import {MatSidenavModule} from '@angular/material/sidenav';
+import { MatSidenavModule } from '@angular/material/sidenav';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -24,7 +24,10 @@ import { HeaderModule } from './header/header.module';
     MatSidenavModule,
     HeaderModule,
   ],
-  providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
+  providers: [
+    { provide: LocationStrategy, useClass: HashLocationStrategy },
+    { provide: Window, useValue: window },
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

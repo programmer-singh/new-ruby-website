@@ -1,13 +1,49 @@
-@import '../variables.scss';
+@import "../variables.scss";
+.animate__animated {
+    visibility: visible !important;
+}
+.hide-on-init {
+    visibility: hidden;
+}
 .slide-content {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 200px;
     img {
-        width: 100%
+        width: 100%;
     }
 }
+
+.divider {
+    padding: 40px 20%;
+    hr {
+        background-color: #BDBDBD;
+    }
+}
+
+.mission {
+    padding: 0 40px;
+    background-color: eaeaee;
+    text-align: center;
+    .mission-head {
+        color: #303F9F;
+        font-size: 38px;
+        margin-top: 0;
+        span {
+            color: #FF5252;
+        }
+    }
+    q {
+        font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+        font-size: 26px;
+    }
+    .mission-content {
+        text-align: justify ;
+        color: #757575;
+    }
+}
+
 @media (min-width: $bp-pot-tab) {
     .slide-content {
         height: 350px;

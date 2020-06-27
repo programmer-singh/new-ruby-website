@@ -111,11 +111,12 @@
         .header-col-left {
             .logo-container {
                 .image {
-                    height: 60px;
+                    height: 50px;
                 }
                 .text {
-                    font-size: 3vw;
-                    font-weight: 500;
+                    display: none;
+                    // font-size: 3vw;
+                    // font-weight: 500;
                 }
             }
         }
@@ -139,9 +140,10 @@
         .header-col-left {
             .logo-container {
                 .image {
-                    height: 100px;
+                    height: 90px;
                 }
                 .text {
+                    display: block;
                     font-size: 2.6vw;
                     font-weight: 500;
                 }
@@ -180,8 +182,16 @@
         .header-col-left {
             .logo-container {
                 .image {
-                    height: 200px;
+                    height: 180px;
                 }
+            }
+        }
+    }
+    .navbar {
+        font-size: 28px;
+        i {
+            &.material-icons {
+                font-size: 28px;
             }
         }
     }
