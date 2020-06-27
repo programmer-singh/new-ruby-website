@@ -7,6 +7,7 @@
 // }
 .intro {
     .intro-content {
+        padding: 0 40px;
         background-image: linear-gradient(90deg, #ff525212, transparent);
         display: flex;
         justify-content: center;
@@ -89,7 +90,6 @@
 
 @media (max-width: $bp-pot-tab) {
     .intro-content {
-        padding: 0 40px;
         .text {
             width: 100%;
             .heading {
