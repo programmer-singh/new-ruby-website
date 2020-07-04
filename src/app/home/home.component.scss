@@ -20,7 +20,6 @@
     background-position: center;
     background-attachment: fixed;
     padding: 0 40px;
-
     .intro-content {
         display: flex;
         justify-content: center;
@@ -202,7 +201,7 @@
         .text {
             width: 100%;
             .heading {
-                height: calc(100vh - 70px) !important;
+                height: auto !important;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
