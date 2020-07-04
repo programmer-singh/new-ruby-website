@@ -194,6 +194,21 @@
         }
     }
 }
+@media (orientation: landscape) {
+    .intro-content {
+        height: auto !important;
+        .text {
+            width: 100%;
+            .heading {
+                height: auto !important;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+}
 
 @media (max-width: $bp-land-tab) and (orientation: landscape) {
     .intro-content {
