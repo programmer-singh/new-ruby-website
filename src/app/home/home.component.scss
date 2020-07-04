@@ -194,7 +194,7 @@
         }
     }
 }
-@media (orientation: landscape) {
+@media (max-width: 1000px) and (orientation: landscape) {
     .intro-content {
         height: auto !important;
         .text {
