@@ -1,3 +1,4 @@
+import { FooterModule } from './footer/footer.module';
 import { DrawerMenuModule } from './drawer-menu/drawer-menu.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -9,6 +10,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 import { HeaderModule } from './header/header.module';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +22,7 @@ import { HeaderModule } from './header/header.module';
     AppRoutingModule,
     BrowserAnimationsModule,
     HeaderModule,
+    FooterModule,
     DrawerMenuModule,
   ],
   providers: [

@@ -1,15 +1,15 @@
+import { FooterComponent } from './footer.component';
 import { CommonModule } from '@angular/common';
-import { DrawerMenuComponent } from './drawer-menu.component';
 import { NgModule } from '@angular/core';
 import {MatIconModule} from '@angular/material/icon';
 import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
     declarations: [
-        DrawerMenuComponent,
+        FooterComponent,
     ],
     exports: [
-        DrawerMenuComponent,
+        FooterComponent,
     ],
     imports: [
         CommonModule,
@@ -17,4 +17,4 @@ import { HttpClientModule } from '@angular/common/http';
         HttpClientModule
     ]
 })
-export class DrawerMenuModule { }
+export class FooterModule { }
