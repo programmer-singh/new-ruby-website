@@ -4,6 +4,7 @@
 @import "~ngx-owl-carousel-o/lib/styles/scss/owl.theme.default";
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 @import "~animate.css/animate.min";
+@import "app/variables.scss";
 html,
 body {
     height: 100%;
@@ -62,5 +63,129 @@ body {
     }
     .secondary-text {
         color: #ff5252;
+    }
+    .khali-div {
+        height: 70px;
+        width: 100%;
+        background-color: transparent;
+    }
+    .divider {
+        padding: 40px 20%;
+        &.divider-sm {
+            padding: 5px 20%;
+        }
+        hr {
+            background-color: #bdbdbd;
+        }
+    }
+    .about {
+        padding: 0 40px;
+        background-color: eaeaee;
+        text-align: center;
+        .about-head {
+            color: #303f9f;
+            margin-top: 0;
+            div {
+                display: inline-block;
+            }
+        }
+        q {
+            font-family: "Open Sans", sans-serif;
+            // font-size: 26px;
+        }
+        .about-content {
+            text-align: justify;
+            color: #757575;
+        }
+    }
+    
+    .opd {
+        padding: 0 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .opd-card {
+            display: flex;
+            background-image: linear-gradient(180deg, white, #fff0f0);
+            box-shadow: 0px 1px 6px 0px grey;
+            width: 100%;
+            padding: 4em 0;
+            .opd-content {
+                padding: 0 4em;
+                width: 50%;
+                &:first-child {
+                    border-right: 1px solid #505050;
+                }
+                .opd-heading {
+                    border-bottom: 1px solid #ff5252;
+                    padding-bottom: 1em;
+                }
+                .opd-text {
+                    font-size: 20px;
+                    color: #212121;
+                    .sub {
+                        color: #757575;
+                    }
+                    .emergency-contact {
+                        font-size: 40px;
+                        .material-icons {
+                            color: #212121;
+                            font-size: 34px;
+                        }
+                    }
+                    .row {
+                        margin-bottom: 5px;
+                        &:last-child {
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: $bp-pot-tab) {
+        .opd-card {
+            .opd-content {
+                padding-left: 0 !important;
+                padding-right: 0 !important;
+            }
+        }
+    }
+    
+    @media (max-width: $bp-land-tab) {
+        .opd-card {
+            flex-direction: column;
+            align-items: center;
+            .opd-content {
+                width: 80% !important;
+                box-sizing: border-box;
+                &:first-child {
+                    border-right: none !important;
+                    border-bottom: 1px solid #505050;
+                    padding-bottom: 31.54px !important;
+                }
+            }
+        }
+    }
+    
+    @media (max-width: $bp-land-tab) and (orientation: landscape) {
+        .about {
+            .about-head {
+                div {
+                    display: block;
+                }
+            }
+        }
+    }
+    
+    @media (max-width: $bp-land-tab) and (orientation: potrait) {
+        .about {
+            .about-head {
+                div {
+                    display: block;
+                }
+            }
+        }
     }
 }

@@ -1,21 +1,20 @@
-import { FooterModule } from './footer/footer.module';
-import { DrawerMenuModule } from './drawer-menu/drawer-menu.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { LocationStrategy, HashLocationStrategy } from '@angular/common';
+import { LocationStrategy, PathLocationStrategy } from '@angular/common';
+
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-
+import { DrawerMenuModule } from './drawer-menu/drawer-menu.module';
 import { HeaderModule } from './header/header.module';
-import { FooterComponent } from './footer/footer.component';
+import { FooterModule } from './footer/footer.module';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { AppComponent } from './app.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PageNotFoundComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
@@ -26,7 +25,7 @@ import { FooterComponent } from './footer/footer.component';
     DrawerMenuModule,
   ],
   providers: [
-    { provide: LocationStrategy, useClass: HashLocationStrategy },
+    { provide: LocationStrategy, useClass: PathLocationStrategy },
     { provide: Window, useValue: window },
   ],
   bootstrap: [AppComponent]

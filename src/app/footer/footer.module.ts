@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import {MatIconModule} from '@angular/material/icon';
 import { HttpClientModule } from '@angular/common/http';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
     declarations: [
@@ -14,7 +15,8 @@ import { HttpClientModule } from '@angular/common/http';
     imports: [
         CommonModule,
         MatIconModule,
-        HttpClientModule
+        HttpClientModule,
+        RouterModule,
     ]
 })
 export class FooterModule { }

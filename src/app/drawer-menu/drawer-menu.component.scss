@@ -40,6 +40,10 @@
                 &:last-child {
                     border-bottom: none;
                 }
+                a {
+                    text-decoration: none;
+                    color: #fff;
+                }
             }
         }
         .creds {

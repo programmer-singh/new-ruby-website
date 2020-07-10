@@ -1,3 +1,4 @@
+import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { DrawerMenuComponent } from './drawer-menu.component';
 import { NgModule } from '@angular/core';
@@ -14,7 +15,8 @@ import { HttpClientModule } from '@angular/common/http';
     imports: [
         CommonModule,
         MatIconModule,
-        HttpClientModule
+        HttpClientModule,
+        RouterModule,
     ]
 })
 export class DrawerMenuModule { }

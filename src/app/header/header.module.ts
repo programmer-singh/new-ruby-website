@@ -1,6 +1,8 @@
+import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { HeaderComponent } from './header.component';
 import { NgModule } from '@angular/core';
+
 
 import {MatButtonModule} from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon';
@@ -14,6 +16,7 @@ import {MatIconModule} from '@angular/material/icon';
     ],
     imports: [
         CommonModule,
+        RouterModule,
         MatButtonModule,
         MatIconModule,
     ]
