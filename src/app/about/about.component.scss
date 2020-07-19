@@ -1,12 +1,15 @@
 .about {
     .mission {
+        margin: auto;
+        width: 100%;
+        max-width: 700px;
         .mission-head {
             font-size: 38px;
             margin-top: 0;
         }
         .mission-text {
             font-size: 22px;
-            font-family: "Open Sans", sans-serif;
+            font-family: Roboto, sans-serif;
         }
     }
 }

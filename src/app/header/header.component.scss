@@ -31,11 +31,8 @@
 }
 
 .navbar {
-    background-image: linear-gradient(90deg, white, #fff0f0);
-    // &:hover {
-        // background-image: linear-gradient(deg, white, #fff0f0);
-        // transition: all 2s linear;
-    // }
+    // background-image: linear-gradient(90deg, white, #fff0f0);
+    background-color: #303f9f;
     .nav-list {
         list-style: none;
         display: flex;
@@ -46,7 +43,7 @@
         .nav-item {
             padding: 5px 10px;
             border-right: 1px solid #bdbdbd;
-            color: #303f9f;
+            color: #fff;
             position: relative;
             &::before {
                 content: "";
@@ -55,11 +52,10 @@
                 height: 2px;
                 bottom: 0;
                 left: 50%;
-                background-color: #3f51b5;
+                background-color: #ccb9bc;
                 transition: width 0.3s ease 0s, left 0.3s ease 0s;
             }
             &:hover {
-                color: #ff5252;
                 cursor: pointer;
                 &::before {
                     width: 100%;
@@ -77,23 +73,14 @@
             }
             a {
                 text-decoration: none;
-                color: #303f9f;
+                color: #fff;
             }
         }
     }
 }
 
 @media (max-width: $bp-phone) {
-    // .header-row {
-    //     .header-col-right {
-    //         .contact-container {
-    //             display: none;
-    //         }
-    //         .hamburger {
-    //             display: block;
-    //         }
-    //     }
-    // }
+
 }
 
 @media (max-width: $bp-land-tab) {

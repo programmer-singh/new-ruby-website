@@ -1,15 +1,8 @@
 @import "../variables.scss";
-// .animate__animated {
-//     visibility: visible !important;
-// }
-// .hide-on-init {
-//     visibility: hidden;
-// }
+
 .padded {
-    // padding: 0 40px;
     background-image: linear-gradient(90deg, #fff, #fff0f0);
 }
-
 .intro {
     background-image: url("../../assets/images/new-ruby-hospital-outside.jpeg");
     background-position: center;
@@ -28,7 +21,6 @@
             align-items: center;
             background-color: #ffffffd6;
             .text {
-                // width: 50%;
                 text-align: center;
                 .heading {
                     margin: 0;
@@ -46,12 +38,11 @@
                     }
                     .mission-text {
                         font-size: 22px;
-                        font-family: "Open Sans", sans-serif;
+                        font-family: Roboto, sans-serif;
                     }
                 }
             }
             .logo {
-                // display: flex;
                 justify-content: center;
                 align-items: center;
                 width: 50%;

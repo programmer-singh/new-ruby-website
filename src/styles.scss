@@ -1,8 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
-// @import "~animate.css/animate.min";
 @import "~ngx-owl-carousel-o/lib/styles/scss/owl.carousel";
 @import "~ngx-owl-carousel-o/lib/styles/scss/owl.theme.default";
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @import "~animate.css/animate.min";
 @import "app/variables.scss";
 html,
@@ -12,7 +11,7 @@ body {
 body {
     margin: 0;
     overflow: auto;
-    font-family: Roboto, "Helvetica Neue", sans-serif;
+    font-family: 'Poppins', "Helvetica Neue", sans-serif;
     .owl-carousel {
         width: 100%;
         &.owl-theme {
@@ -51,18 +50,18 @@ body {
         }
     }
     h1 {
-        color: #3f51b5;
+        color: #303f9f;
         font-size: 80px;
     }
     h2 {
-        color: #3f51b5;
+        color: #303f9f;
         font-size: 38px;
     }
     .subheadings {
         font-size: 38px;
     }
     .secondary-text {
-        color: #ff5252;
+        color: #e53935;
     }
     .khali-div {
         height: 70px;
@@ -90,10 +89,11 @@ body {
             }
         }
         q {
-            font-family: "Open Sans", sans-serif;
-            // font-size: 26px;
+            font-family: Roboto, sans-serif;
         }
         .about-content {
+            margin: auto;
+            max-width: 700px;
             text-align: justify;
             color: #757575;
         }

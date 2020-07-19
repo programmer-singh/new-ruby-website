@@ -3,7 +3,6 @@
 .footer {
     position: relative;
     background-image: linear-gradient(90deg, white, #fff0f0);
-    // background-color: #eaeaee;
     box-shadow: -2px 0 6px 1px grey;
     display: flex;
     .col {
@@ -54,7 +53,6 @@
                 padding: 0;
                 margin: 0;
                 &.icon {
-                    // border: 1px solid #ff5252;
                     width: 25px;
                     height: 25px;
                     display: flex;
@@ -84,16 +82,7 @@
 }
 
 @media (max-width: $bp-phone) {
-    // .header-row {
-    //     .header-col-right {
-    //         .contact-container {
-    //             display: none;
-    //         }
-    //         .hamburger {
-    //             display: block;
-    //         }
-    //     }
-    // }
+    
 }
 
 @media (max-width: $bp-land-tab) {
