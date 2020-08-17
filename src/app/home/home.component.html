@@ -4,14 +4,29 @@
         <div class="intro-content">
             <div class="sub-back">
                 <div class="text">
-                    <h1 class="heading">
-                        <div class="animate__animated animate__fadeInDown">
-                            New Ruby
+                    <div class="row">
+                        <div class="logo">
+                            <img class="image animate__animated animate__fadeIn"
+                                src="assets/images/new-ruby-hospital-logo.png" />
                         </div>
-                        <div class="secondary-text">
-                            Hospital
+                        <div class="head">
+                            <h1 class="heading">
+                                <div class="animate__animated animate__fadeInDown">
+                                    New Ruby
+                                </div>
+                                <div class="secondary-text">
+                                    Hospital Pvt. Ltd.
+                                </div>
+                            </h1>
                         </div>
-                    </h1>
+                        <div class="nabh-logo">
+                            <div>
+                                <img class="image animate__animated animate__fadeIn"
+                                    src="assets/images/nabh-logo.png" />
+                                <p>NABH Full Accredited Certification</p>
+                            </div>
+                        </div>
+                    </div>
                     <div class="divider divider-xsm">
                         <hr />
                     </div>
@@ -21,16 +36,17 @@
                         </h2>
                         <p class="mission-text animate__animated animate__fadeInLeft">
                             <q>
-                                To provide Quality Healthcare services to sick and needy with missionary zeal in an ethical
+                                To provide Quality Healthcare services to sick and needy with missionary zeal in an
+                                ethical
                                 manner
                                 and with total commitment.
                             </q>
                         </p>
                     </div>
                 </div>
-                <div class="logo">
+                <!-- <div class="logo">
                     <img class="image animate__animated animate__fadeIn" src="assets/images/new-ruby-hospital-logo.png" />
-                </div>
+                </div> -->
             </div>
         </div>
     </div>
@@ -39,33 +55,58 @@
         <hr />
     </div>
 
-    <div class="about">
-        <div class="about-container">
-            <h2 class="about-head subheadings" animateOnScroll animationName="animate__animated animate__bounce">
-                <div>Welcome to&nbsp;</div>
-                <div class="secondary-text">New Ruby Hospital</div>
-            </h2>
-            <p>We Offer Extensive Medical Procedures To Outbound And Inbound Patients.</p>
-            <div class="about-content">
-                <p>
-                    <q>
-                        Our hospital is committed to perfecting the technological advances in healthcare and management
-                        services. We update the professional skills of our team through a process of continuous training
-                        and reviews.
-                    </q>
-                </p>
-                <p>
-                    Multi-disciplinary team of experienced doctors, nurses and other supporting staff at New Ruby
-                    Hospital will make your treatment personalised and their skill and experience will achieve
-                    the best possible outcome for you. Wherever you are, we make your treatment easy and comfortable.
-                </p>
-                <p>
-                    New Ruby Hospital is a more peaceful and comforting experience. The strategic location of this
-                    hospital is easily accessible from the city of Jalandhar and it's neighboring areas and at the same
-                    time, provides a retreat-like experience. The quietness of the place is calming and refreshing and
-                    adds immense value.
-                </p>
-            </div>
+    <div class="owlc">
+        <owl-carousel-o [options]="customOptions">
+            <ng-template carouselSlide>
+                <div class="slide-content">
+                    <img src="assets/images/new-ruby-hospital-outside.jpeg" />
+                </div>
+            </ng-template>
+            <ng-template carouselSlide>
+                <div class="slide-content">
+                    <img src="assets/images/new-ruby-hospital-reception-2.jpeg" />
+                </div>
+            </ng-template>
+            <ng-template carouselSlide>
+                <div class="slide-content">
+                    <img src="assets/images/new-ruby-hospital-private-room.jpeg" />
+                </div>
+            </ng-template>
+            <ng-template carouselSlide>
+                <div class="slide-content">
+                    <img src="assets/images/new-ruby-hospital-operation-theater.jpeg" />
+                </div>
+            </ng-template>
+            <ng-template carouselSlide>
+                <div class="slide-content">
+                    <img src="assets/images/new-ruby-hospital-icu.jpeg" />
+                </div>
+            </ng-template>
+        </owl-carousel-o>
+    </div>
+
+    <div class="divider">
+        <hr />
+    </div>
+
+    <div class="team">
+        <div class="member">
+            <img src="assets/images/dr_surinder_pal_singh_grover.jpg" alt="Dr. Surinder Pal Singh Grover" />
+            <div class="name">Dr. Surinder Pal Singh Grover</div>
+            <div class="desi">Consultant Physician & Heart Specialist</div>
+            <div class="qual">MBBS, MD</div>
+        </div>
+        <div class="member">
+            <img src="assets/images/dr_puneet_pal_singh_grover.jpg" alt="Dr. Puneet Pal Singh Grover" />
+            <div class="name">Dr. Puneet Pal Singh Grover</div>
+            <div class="desi">Urologist</div>
+            <div class="qual">MS, M.Ch.</div>
+        </div>
+        <div class="member">
+            <img src="assets/images/dr_harneet_kaur_grover.jpg" alt="Dr. Harneet Kaur Grover" />
+            <div class="name">Dr. Harneet Kaur Grover</div>
+            <div class="desi">Obstetrician & Gynecologist</div>
+            <div class="qual">MD, FMAS</div>
         </div>
     </div>
 
@@ -76,8 +117,8 @@
     <div class="opd">
         <div class="opd-card">
             <div class="opd-content left">
-                <h2 class="opd-heading subheadings"animateOnScroll animationName="animate__animated animate__flipInX">
-                    OPD <span class="secondary-text">Hours</span> 
+                <h2 class="opd-heading subheadings" animateOnScroll animationName="animate__animated animate__flipInX">
+                    OPD <span class="secondary-text">Hours</span>
                 </h2>
                 <div class="opd-text">
                     <div class="row">
@@ -85,49 +126,55 @@
                         <div class="col sub">9:00 am - 2:00 pm (Morning)</div>
                     </div>
                     <div class="row">
-                        <div class="col">Monday-Saturday</div>
+                        <!-- <div class="col">Monday-Saturday</div> -->
                         <div class="col sub">5:00 pm - 7:00 pm (Evening)</div>
                     </div>
                     <div class="row">
                         <div class="col">Sunday</div>
-                        <div class="col sub">Emergency cases only</div>
+                        <div class="col sub">Emergency only</div>
                     </div>
-
-                </div>
-            </div>
-            <div class="opd-content right">
-                <h2 class="opd-heading subheadings" animateOnScroll animationName="animate__animated animate__flipInX">
-                    Emergency <span class="secondary-text">Cases</span>
-                </h2>
-                <div class="opd-text">
-                    <p class="emergency-contact"><i class="material-icons">call</i> 0181-2224151</p>
-                    <p class="sub">Emergency services are available with the hospital for 24 X 7.</p>
                 </div>
             </div>
         </div>
-
     </div>
+
+    <!-- <div class="divider">
+        <hr />
+    </div>
+
+    <div class="reg">
+        <div class="reg-cont">
+            <h2 class="subheadings">Book an <span class="secondary-text">Appointment</span></h2>
+            <div class="reg-row">
+                <div class="reg-col reg-left">
+                    <h3>Call Us</h3>
+                    <div class="reg-callus">
+                        <p class="emergency-contact"><i class="material-icons">call</i> 0181-2224151</p>
+                        <p class="emergency-contact"><i class="material-icons">call</i> 0181-2224151</p>
+                    </div>
+                </div>
+                <div class="reg-col reg-right">
+                    <h3>Let us contact</h3>
+                    <div class="reg-form">
+                        <form>
+                            <div class="form-item">
+                                <label for="name">Full Name</label>
+                                <input id="name" type="text" placeholder="John Doe" required/>
+                            </div>
+                            <div class="form-item">
+                                <label for="dob">Date of Birth</label>
+                                <input id="dob" type="date" required/>
+                            </div>
+                            <div>
+                                <span>male </span>
+                                <span>female</span>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
     <div class="khali-div"></div>
 </div>
-
-
-
-<!-- <div class="owlc">
-    <owl-carousel-o [options]="customOptions">
-        <ng-template carouselSlide>
-            <div class="slide-content">
-                <img src="assets/images/new-ruby-hospital-outside.jpeg" />
-            </div>
-        </ng-template>
-        <ng-template carouselSlide>
-            <div class="slide-content">
-                <img src="assets/images/new-ruby-hospital-reception-2.jpeg" />
-            </div>
-        </ng-template>
-        <ng-template carouselSlide>
-            <div class="slide-content">
-                <img src="assets/images/new-ruby-hospital-waiting-area-2.jpeg" />
-            </div>
-        </ng-template>
-    </owl-carousel-o>
-</div> -->

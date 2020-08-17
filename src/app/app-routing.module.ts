@@ -10,6 +10,7 @@ const routes: Routes = [
   { path: 'departments', loadChildren: () => import('./departments/departments.module').then(m => m.DepartmentsModule) },
   { path: 'doctors', loadChildren: () => import('./doctors/doctors.module').then(m => m.DoctorsModule) },
   { path: 'gallery', loadChildren: () => import('./gallery/gallery.module').then(m => m.GalleryModule) },
+  { path: 'empanelments', loadChildren: () => import('./empanelments/empanelments.module').then(m => m.EmpanelmentsModule) },
   { path: '**', component: PageNotFoundComponent },
 ];
 

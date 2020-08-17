@@ -18,6 +18,17 @@ export class DrawerMenuComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  contacts() {
+    this.closeTheDrawer();
+    setTimeout(() => {
+      const body = document.body;
+      const html = document.documentElement;
+      const height = Math.max(body.scrollHeight, body.offsetHeight,
+        html.clientHeight, html.scrollHeight, html.offsetHeight);
+      window.scrollTo(0, height);
+    }, 1000);
+  }
+
   closeTheDrawer() {
     this.closeDrawer.emit();
   }
