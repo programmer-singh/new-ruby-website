@@ -27,82 +27,88 @@
                     display: flex;
                     align-items: center;
                     justify-content: center;
-                    .logo {
-                        justify-content: center;
-                        align-items: center;
-                        width: 20%;
-                        .image {
-                            width: 80%;
-                        }
-                    }
-                    .head {
-                        width: 60%;
-                        .heading {
-                            margin: 0;
-                            font-size: 80px;
-                            font-weight: 500;
-                        }
-                    }
-                    .nabh-logo {
-                        justify-content: center;
-                        align-items: center;
-                        width: 20%;
-                        .image {
-                            width: 50%;
-                        }
-                        p {
-                            margin: 0;
-                            font-size: 12px;
-                        }
-                    }
+                    
                 }
-                .mission {
-                    max-width: 700px;
-                    margin: auto;
-                    .mission-head {
-                        font-size: 38px;
-                        margin-top: 0;
-                    }
-                    .mission-text {
-                        font-size: 22px;
-                        font-family: Roboto, sans-serif;
-                    }
-                }
+                
+            }
+        }
+    }
+}
+.intro-content {
+    .text {
+        .logo {
+            justify-content: center;
+            align-items: center;
+            width: 20%;
+            .image {
+                width: 80%;
+            }
+        }
+        .head {
+            width: 60%;
+            .heading {
+                margin: 0;
+                font-size: 80px;
+                font-weight: 500;
+            }
+        }
+        .nabh-logo {
+            justify-content: center;
+            align-items: center;
+            width: 20%;
+            .image {
+                width: 50%;
+            }
+            p {
+                margin: 0;
+                font-size: 12px;
+            }
+        }
+        .mission {
+            max-width: 700px;
+            margin: auto;
+            .mission-head {
+                font-size: 38px;
+                margin-top: 0;
+            }
+            .mission-text {
+                font-size: 22px;
+                font-family: Roboto, sans-serif;
             }
         }
     }
 }
 
-.team {
-    display: flex;
-    justify-content: center;
-    .member {
-        text-align: center;
-        width: 20%;
-        margin: 0 20px;
-        box-shadow: 0px 0px 4px 1px grey;
-        background-image: linear-gradient(180deg, white, #f0f2ff);
-        img {
-            width: 100%;
-            height: 300px;
-        }
-        .name {
-            color: #303f9f;
-            font-weight: 600;
-            font-size: 17px;
-        }
-        .desi {
-            font-size: 12px;   
-            font-weight: 600;
-            color: #e53935;         
-        }
-        .qual {
-            font-size: 12px;
-            color: #e53935;         
-            // text-align: center;
-        }
-    }
-}
+// .team {
+//     display: flex;
+//     justify-content: center;
+//     .member {
+//         text-align: center;
+//         width: 20%;
+//         margin: 0 20px;
+//         box-shadow: 0px 0px 4px 1px grey;
+//         background-image: linear-gradient(180deg, white, #f0f2ff);
+//         img {
+//             width: 100%;
+//             height: 300px;
+//         }
+//         .name {
+//             color: #303f9f;
+//             font-weight: 600;
+//             font-size: 17px;
+//         }
+//         .desi {
+//             font-size: 12px;   
+//             font-weight: 600;
+//             color: #e53935;         
+//         }
+//         .qual {
+//             font-size: 12px;
+//             color: #e53935;         
+//             // text-align: center;
+//         }
+//     }
+// }
 
 .reg {
     background-image: url("../../assets/images/new-ruby-hospital-outside.jpeg");
@@ -137,29 +143,39 @@
     }
 }
 
-@media (max-width: $bp-pot-tab) {
+@media (min-width: $bp-xl-screens) {
+    .intro {
+        .intro-content {
+            height: auto;
+        }
+    }
     .intro-content {
         .text {
-            width: 100%;
-            .logo {
-                display: none;
-            }
-            .nabh-logo {
-                display: none;
-            }
             .head {
                 .heading {
-                    font-size: 50px !important;
+                    height: auto;
                 }
             }
         }
-        .mission {
-            .mission-head {
-                font-size: 36px !important;
-                font-weight: 500 !important;
-            }
-            .mission-text {
-                font-size: 20px !important;
+    }
+}
+@media (max-width: $bp-large-screens) and (orientation: landscape) {
+    .intro {
+        .intro-content {
+            height: auto;
+        }
+    }
+    .intro-content {
+        .text {
+            width: 100%;
+            .head {
+                .heading {
+                    height: auto;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
             }
         }
     }
@@ -176,7 +192,7 @@
             }
             .head {
                 .heading {
-                    font-size: 50px !important;
+                    font-size: 50px;
                 }
             }
         }
@@ -184,36 +200,24 @@
             padding: 0 20px;
         }
     }
-    .team {
-        flex-direction: column;
-        align-items: center;
-        .member {
-            margin: 10px 0;
-            width: 50%;
-        }
-    }
-}
-@media (max-width: 1000px) and (orientation: landscape) {
-    .intro-content {
-        height: auto !important;
-        .text {
-            width: 100%;
-            .head {
-                .heading {
-                    height: auto !important;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-                }
-            }
-        }
-    }
+    // .team {
+    //     flex-direction: column;
+    //     align-items: center;
+    //     .member {
+    //         margin: 10px 0;
+    //         width: 50%;
+    //     }
+    // }
 }
 
+
 @media (max-width: $bp-land-tab) and (orientation: landscape) {
+    .intro {
+        .intro-content {
+            height: auto;
+        }
+    }
     .intro-content {
-        height: auto !important;
         .text {
             width: 100%;
             .logo {
@@ -223,7 +227,7 @@
                 display: none !important;
             }
             .heading {
-                height: auto !important;
+                height: auto;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
@@ -234,8 +238,12 @@
 }
 
 @media (max-width: $bp-land-tab) and (orientation: potrait) {
+    .intro {
+        .intro-content {
+            height: calc(100vh - 70px);
+        }
+    }
     .intro-content {
-        height: calc(100vh - 70px) !important;
         .text {
             width: 100%;
             .row {
@@ -259,6 +267,63 @@
     }
 }
 
+@media (max-width: $bp-pot-tab) {
+    .intro-content {
+        .text {
+            .logo {
+                display: none;
+            }
+            .nabh-logo {
+                display: none;
+            }
+            .head {
+                .heading {
+                    font-size: 35px;
+                    font-weight: 600;
+                }
+            }
+            .mission {
+                padding: 0 20px;
+                .mission-head {
+                    font-size: 26px;
+                    font-weight: 400;
+                }
+                .mission-text {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: $bp-sm-phone) {
+    .intro-content {
+        .text {
+            .logo {
+                display: none;
+            }
+            .nabh-logo {
+                display: none;
+            }
+            .head {
+                .heading {
+                    font-size: 25px;
+                    font-weight: 600;
+                }
+            }
+            .mission {
+                padding: 0 20px;
+                .mission-head {
+                    font-size: 20px;
+                    font-weight: 400;
+                }
+                .mission-text {
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}
+
 @media (min-width: $gt-bp-land-tab) {
     .intro-content {
         .text {
@@ -270,11 +335,12 @@
     }
 }
 
-@media (min-width: $bp-lap-desk) {
-}
 
-@media (min-width: $bp-large-screens) {
-}
+// @media (min-width: $bp-lap-desk) {
+// }
+
+// @media (min-width: $bp-large-screens) {
+// }
 
 // .owlc {
 //     width: 50%;

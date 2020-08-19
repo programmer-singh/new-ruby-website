@@ -1,6 +1,7 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { MatIconRegistry } from '@angular/material/icon';
 import { DomSanitizer } from '@angular/platform-browser';
+import { Router, NavigationEnd } from '@angular/router';
 
 @Component({
   selector: 'app-drawer-menu',
@@ -9,7 +10,12 @@ import { DomSanitizer } from '@angular/platform-browser';
 })
 export class DrawerMenuComponent implements OnInit {
   @Output() closeDrawer: EventEmitter<any> = new EventEmitter<any>();
-  constructor(private iconRegistry: MatIconRegistry, private sanitizer: DomSanitizer) { 
+  constructor(private iconRegistry: MatIconRegistry, private sanitizer: DomSanitizer, private router: Router) {
+    this.router.events.subscribe(e => {
+      if (e instanceof NavigationEnd){
+        this.closeTheDrawer();
+      }
+    });
     iconRegistry.addSvgIcon(
       'coding',
       sanitizer.bypassSecurityTrustResourceUrl('assets/images/computer.svg'));

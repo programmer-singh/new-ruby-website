@@ -163,6 +163,11 @@ body {
         }
     }
     
+    @media (min-width: $bp-xl-screens) {
+        .khali-div {
+            height: 110px;
+        }
+    }
 
     @media (max-width: $bp-pot-tab) {
         .opd-card {
