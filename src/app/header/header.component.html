@@ -2,32 +2,32 @@
     <div class="header-row">
         <div class="header-col header-col-left">
             <div class="logo-container">
-                <img class="logo image" src="assets/images/new-ruby-hospital-logo.png" />
-                <img class="logo image" src="assets/images/nabh-logo.png" />
+                <img class="logo image" src="assets/images/new-ruby-hospital-logo.png" alt="New Ruby Hospital Logo" />
+                <img class="logo image" src="assets/images/nabh-logo.png" alt="NABH Logo" />
             </div>
         </div>
         <div class="header-col header-col-right">
-            <button class="hamburger" mat-icon-button (click)="toggleAppDrawer()">
+            <button aria-label="Open Menu Button" class="hamburger" mat-icon-button (click)="toggleAppDrawer()">
                 <mat-icon>menu</mat-icon>
             </button>
         </div>
     </div>
     <nav class="navbar">
         <ul class="nav-list">
-            <li class="nav-item active">
+            <li class="nav-item" routerLinkActive="active">
                 <a routerLink="/home">
-                    <img class="logo" src="assets/images/new-ruby-hospital-logo.png" />
+                    <img class="logo" src="assets/images/new-ruby-hospital-logo.png" alt="New Ruby Hospital Logo" />
                     <!-- <i class="material-icons">home</i> -->
                 </a>
             </li>
-            <li class="nav-item"><a routerLink="/about">About us</a></li>
-            <li class="nav-item"><a routerLink="/departments">Departments</a></li>
+            <li class="nav-item" routerLinkActive="active"><a routerLink="/about">About us</a></li>
+            <li class="nav-item" routerLinkActive="active"><a routerLink="/departments">Departments</a></li>
             <!-- <li class="nav-item"><a>Specialisation</a></li> -->
-            <li class="nav-item"><a routerLink="/empanelments">Empanelments</a></li>
+            <li class="nav-item" routerLinkActive="active"><a routerLink="/empanelments">Empanelments</a></li>
             <!-- <li class="nav-item"><a>Facilities</a></li> -->
-            <li class="nav-item"><a routerLink="/home">Media</a></li>
-            <li class="nav-item"><a href="https://www.google.com/maps/uv?hl=en&pb=!1s0x391a5af8be172d2b%3A0x9f26ef7eee6f91a!3m1!7e115!4shttps%3A%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipPQy6dOUV1t6LuPxpQxZupk4EHABEVxAPkBruWv%3Dw300-h200-k-no!5snew%20ruby%20hospital%20-%20Google%20Search!15sCgIgAQ&imagekey=!1e10!2sAF1QipPQy6dOUV1t6LuPxpQxZupk4EHABEVxAPkBruWv&sa=X&ved=2ahUKEwirlsDB35_rAhUDzTgGHUkfAW0QoiowCnoECBIQBg" target="_blank">Gallery</a></li>
-            <li class="nav-item"><a routerLink="/doctors">Find doctor</a></li>
+            <li class="nav-item" routerLinkActive="active"><a routerLink="/home">Media</a></li>
+            <li class="nav-item"><a href="https://www.google.com/maps/uv?hl=en&pb=!1s0x391a5af8be172d2b%3A0x9f26ef7eee6f91a!3m1!7e115!4shttps%3A%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipPQy6dOUV1t6LuPxpQxZupk4EHABEVxAPkBruWv%3Dw300-h200-k-no!5snew%20ruby%20hospital%20-%20Google%20Search!15sCgIgAQ&imagekey=!1e10!2sAF1QipPQy6dOUV1t6LuPxpQxZupk4EHABEVxAPkBruWv&sa=X&ved=2ahUKEwirlsDB35_rAhUDzTgGHUkfAW0QoiowCnoECBIQBg" rel="noreferrer" target="_blank">Gallery</a></li>
+            <li class="nav-item" routerLinkActive="active"><a routerLink="/doctors">Find doctor</a></li>
             <li class="nav-item"><a (click)="goToBottom()">Contact us</a></li>
         </ul>
     </nav>
