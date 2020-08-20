@@ -1,3 +1,4 @@
+import { FooterModule } from './../footer/footer.module';
 import { AnimateOnScrollModule } from 'ng2-animate-on-scroll';
 import { MatIconModule } from '@angular/material/icon';
 import { HomeComponentRoutingModule } from './home-routing.module';
@@ -11,6 +12,7 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
         HomeComponentRoutingModule,
         CarouselModule,
         MatIconModule,
+        FooterModule,
         AnimateOnScrollModule.forRoot()
     ],
     declarations: [

@@ -1,3 +1,4 @@
+import { FooterModule } from './../footer/footer.module';
 import { EmpanelmentsComponent } from './empanelments.component';
 import { BannerModule } from './../banner/banner.module';
 import { EmpanelmentsRoutingModule } from './empanelments-routing.module';
@@ -13,7 +14,8 @@ import { NgModule } from '@angular/core';
     imports: [
         CommonModule,
         BannerModule,
-        EmpanelmentsRoutingModule
+        EmpanelmentsRoutingModule,
+        FooterModule,
     ]
 })
 export class EmpanelmentsModule { }

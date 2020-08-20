@@ -1,3 +1,4 @@
+import { FooterModule } from './../footer/footer.module';
 import { DoctorsComponent } from './doctors.component';
 import { BannerModule } from './../banner/banner.module';
 import { DoctorsRoutingModule } from './doctors-routing.module';
@@ -14,6 +15,7 @@ import { NgModule } from '@angular/core';
         CommonModule,
         DoctorsRoutingModule,
         BannerModule,
+        FooterModule,
     ]
 })
 export class DoctorsModule { }

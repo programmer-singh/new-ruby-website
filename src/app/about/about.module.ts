@@ -1,3 +1,4 @@
+import { FooterModule } from './../footer/footer.module';
 import { BannerModule } from './../banner/banner.module';
 
 import { AboutRoutingModule } from './about-routing.module';
@@ -13,6 +14,7 @@ import { NgModule } from '@angular/core';
         AboutRoutingModule,
         CommonModule,
         BannerModule,
+        FooterModule,
     ]
 })
 export class AboutModule { }

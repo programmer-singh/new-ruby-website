@@ -21,7 +21,6 @@ import { AppComponent } from './app.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     HeaderModule,
-    FooterModule,
     DrawerMenuModule,
   ],
   providers: [
