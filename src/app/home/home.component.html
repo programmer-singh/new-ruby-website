@@ -7,7 +7,7 @@
                     <div class="row">
                         <div class="logo">
                             <img class="image animate__animated animate__fadeIn"
-                                src="assets/images/new-ruby-hospital-logo.png" alt="New Ruby Hosptal Logo"/>
+                                src="assets/images/new-ruby-hospital-logo.png" alt="New Ruby Hosptal Logo" />
                         </div>
                         <div class="head">
                             <h1 class="heading">
@@ -21,8 +21,8 @@
                         </div>
                         <div class="nabh-logo">
                             <div>
-                                <img class="image animate__animated animate__fadeIn"
-                                    src="assets/images/nabh-logo.png" alt="NABH Logo" />
+                                <img class="image animate__animated animate__fadeIn" src="assets/images/nabh-logo.png"
+                                    alt="NABH Logo" />
                                 <p>NABH Full Accredited Certification</p>
                             </div>
                         </div>
@@ -59,22 +59,26 @@
         <owl-carousel-o [options]="customOptions">
             <ng-template carouselSlide>
                 <div class="slide-content">
-                    <img src="assets/images/new-ruby-hospital-outside.jpeg" alt="New Ruby Hospital Outside View Image" />
+                    <img src="assets/images/new-ruby-hospital-outside.jpeg"
+                        alt="New Ruby Hospital Outside View Image" />
                 </div>
             </ng-template>
             <ng-template carouselSlide>
                 <div class="slide-content">
-                    <img src="assets/images/new-ruby-hospital-reception-2.jpeg" alt="New Ruby Hospital Reception Image" />
+                    <img src="assets/images/new-ruby-hospital-reception-2.jpeg"
+                        alt="New Ruby Hospital Reception Image" />
                 </div>
             </ng-template>
             <ng-template carouselSlide>
                 <div class="slide-content">
-                    <img src="assets/images/new-ruby-hospital-private-room.jpeg" alt="New Ruby Hospital Private Rooom Image" />
+                    <img src="assets/images/new-ruby-hospital-private-room.jpeg"
+                        alt="New Ruby Hospital Private Rooom Image" />
                 </div>
             </ng-template>
             <ng-template carouselSlide>
                 <div class="slide-content">
-                    <img src="assets/images/new-ruby-hospital-operation-theater.jpeg" alt="New Ruby Hospital Operation Theater Image" />
+                    <img src="assets/images/new-ruby-hospital-operation-theater.jpeg"
+                        alt="New Ruby Hospital Operation Theater Image" />
                 </div>
             </ng-template>
             <ng-template carouselSlide>
@@ -84,7 +88,8 @@
             </ng-template>
             <ng-template carouselSlide>
                 <div class="slide-content">
-                    <img src="assets/images/new-ruby-hospital-doctors-banner.jpeg" alt="New Ruby Hospital Doctors Image" />
+                    <img src="assets/images/new-ruby-hospital-doctors-banner.jpeg"
+                        alt="New Ruby Hospital Doctors Image" />
                 </div>
             </ng-template>
             <ng-template carouselSlide>
@@ -148,7 +153,7 @@
         </div>
     </div>
 
-    <!-- <div class="divider">
+    <div class="divider">
         <hr />
     </div>
 
@@ -159,32 +164,45 @@
                 <div class="reg-col reg-left">
                     <h3>Call Us</h3>
                     <div class="reg-callus">
-                        <p class="emergency-contact"><i class="material-icons">call</i> 0181-2224151</p>
-                        <p class="emergency-contact"><i class="material-icons">call</i> 0181-2224151</p>
+                        <p class="emergency-contact"><a href="tel:01814646327"><i class="material-icons">call</i> 0181-4646327</a></p>
+                        <p class="emergency-contact"><a href="tel:01812224151"><i class="material-icons">call</i> 0181-2224151</a></p>
                     </div>
                 </div>
                 <div class="reg-col reg-right">
                     <h3>Let us contact</h3>
                     <div class="reg-form">
-                        <form>
+                        <form [formGroup]="appForm">
                             <div class="form-item">
-                                <label for="name">Full Name</label>
-                                <input id="name" type="text" placeholder="John Doe" required/>
+                                <label [ngClass]="{'active': formElements.name || appForm.value.name.length > 0}" for="name">Full Name</label>
+                                <input id="name" type="text" formControlName="name" (focus)="setFocus('name')" (blur)="setBlur('name')" required />
                             </div>
                             <div class="form-item">
-                                <label for="dob">Date of Birth</label>
-                                <input id="dob" type="date" required/>
+                                <label [ngClass]="{'active': formElements.dob || appForm.value.dob.length > 0}" for="dob">Date of Birth</label>
+                                <input id="dob" type="text" formControlName="dob" (focus)="setFocus('dob')" (blur)="setBlur('dob')" required onblur="this.type = 'text'" onfocus="this.type = 'date'"/>
                             </div>
-                            <div>
-                                <span>male </span>
-                                <span>female</span>
+                            <div class="form-item">
+                                <label [ngClass]="{'active': formElements.gender || appForm.value.gender.length > 0}" for="gender">Gender</label>
+                                <select id="gender" (focus)="setFocus('gender')" (blur)="setBlur('gender')" formControlName="gender" required>
+                                    <option selected disabled></option>
+                                    <option>Male</option>
+                                    <option>Female</option>
+                                </select>
                             </div>
+                            <div class="form-item">
+                                <label [ngClass]="{'active': formElements.phone || appForm.value.phone.length > 0}" for="phone">Phone</label>
+                                <input id="phone" type="tel" formControlName="phone" (focus)="setFocus('phone')" (blur)="setBlur('phone')" required />
+                            </div>
+                            <div class="form-item">
+                                <label  [ngClass]="{'active': formElements.email || appForm.value.email.length > 0}" for="email">Email</label>
+                                <input id="email" type="email" formControlName="email" (focus)="setFocus('email')" (blur)="setBlur('email')" required />
+                            </div>
+                            <button type="submit" class="form-btn" (click)="submitForm()" >Submit</button>
                         </form>
                     </div>
                 </div>
             </div>
         </div>
-    </div> -->
+    </div>
 
     <div class="khali-div"></div>
 </div>

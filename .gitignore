@@ -47,3 +47,7 @@ Thumbs.db
 
 # Photos
 /new_ruby_images
+
+# secret keys and tokens
+/functions
+src/environments

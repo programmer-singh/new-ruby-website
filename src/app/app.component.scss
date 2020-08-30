@@ -10,7 +10,7 @@
         box-shadow: 2px 0 8px 2px #808080;
     }
     .drawer-component {
-        position: absolute;
+        position: fixed;
         top: 0px;
         left: -10px;
         width: calc(100% + 10px);
