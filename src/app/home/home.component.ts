@@ -114,7 +114,7 @@ export class HomeComponent implements OnInit {
         dob: formData.dob,
         gender: formData.gender,
         phone: formData.phone,
-        email: formData.phone,
+        email: formData.email,
         regDate: new Date(),
       }).then(res => {
         alert('Thank you for submitting your data. You will be contacted soon.');
