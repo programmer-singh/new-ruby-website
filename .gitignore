@@ -52,3 +52,4 @@ Thumbs.db
 /functions
 src/environments
 firebase.rules
+.firebaserc
