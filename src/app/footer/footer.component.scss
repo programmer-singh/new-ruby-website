@@ -43,6 +43,7 @@
             margin-top: 0.5em;
             align-items: center;
             justify-content: center;
+            
             .material-icons {
                 color: #3f51b5;
                 height: 25px;
@@ -102,6 +103,11 @@
                 }
             }
             .row {
+                &.phone {
+                    a{
+                        padding: 8px 0;
+                    }
+                }
                 .col {
                     width: auto !important;
                     &.text {

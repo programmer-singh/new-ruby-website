@@ -1,4 +1,4 @@
-import { environment } from './../environments/environment';
+import { environment } from './../environments/environment.prod';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { LocationStrategy, PathLocationStrategy, HashLocationStrategy } from '@angular/common';
@@ -12,6 +12,7 @@ import { DrawerMenuModule } from './drawer-menu/drawer-menu.module';
 import { HeaderModule } from './header/header.module';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { AppComponent } from './app.component';
+import { ServiceWorkerModule } from '@angular/service-worker';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { AppComponent } from './app.component';
     HeaderModule,
     DrawerMenuModule,
     AngularFireModule.initializeApp(environment.firebase),
-    AngularFirestoreModule
+    AngularFirestoreModule,
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [
     { provide: LocationStrategy, useClass: HashLocationStrategy },
